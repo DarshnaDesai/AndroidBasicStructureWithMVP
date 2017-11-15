@@ -1,0 +1,44 @@
+<!--
+  ~ Copyright (c) 2016.
+  ~
+  ~     Licensed under the Apache License, Version 2.0 (the "License");
+  ~     you may not use this file except in compliance with the License.
+  ~     You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~     Unless required by applicable law or agreed to in writing, software
+  ~     distributed under the License is distributed on an "AS IS" BASIS,
+  ~     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~     See the License for the specific language governing permissions and
+  ~     limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">BasicStructureWithMVP</string>
+
+    <!--Common Messages-->
+    <string name="no_internet">Internet connection is not available!</string>
+    <string name="please_try_again">Please Try Again!!!</string>
+
+    <string name="msg_connection_time_out">Connection time out, please try again</string>
+    <string name="msg_activity_not_found">No activity found to handle this action.</string>
+    <string name="msg_server_not_responding">Server is not responding, please try again</string>
+    <string name="msg_something_went_wrong">Something went wrong, please try again</string>
+
+    <!--Common Validation Messages-->
+    <string name="blank_data">Please enter data</string>
+    <string name="blank_email">Please enter email address</string>
+    <string name="blank_phone">Please enter phone number</string>
+    <string name="blank_password">Please enter password</string>
+
+    <string name="invalid">Invalid data</string>
+    <string name="invalid_email">Please enter valid email</string>
+    <string name="invalid_password">Please enter valid password, password should be at least 6 characters long with 1 character and 1 number.</string>
+    <string name="invalid_phone">Please enter phone number between 10&#8211;15 digits.</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="action_login">Login</string>
+
+</resources>

@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.basicstructurewithmvp"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile "com.android.support:appcompat-v7:$SUPPORT_REPO_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_REPO_VERSION"
+    compile "com.android.support:design:$SUPPORT_REPO_VERSION"
+
+    //view binding
+    compile "com.jakewharton:butterknife:$BUTTER_KNIFE_VERSION"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTER_KNIFE_VERSION"
+
+    // image download
+    compile "com.github.bumptech.glide:glide:$GLIDE_VERSION"
+
+    //Network
+    compile "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION"
+    compile "com.squareup.retrofit2:adapter-rxjava:$RETROFIT_VERSION"
+    compile("com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION") {
+        exclude module: 'gson'
+    }
+    compile "com.squareup.okhttp3:logging-interceptor:$OKHTTP"
+    compile "com.google.code.gson:gson:$GSON_VERSION"
+
+    /*Rx java*/
+    compile "io.reactivex:rxjava:$RX_JAVA_VERSION"
+    compile "io.reactivex:rxandroid:$RX_ANDROID_VERSION"
+
+    // runtime permission
+    compile "com.github.hotchemi:permissionsdispatcher:$PERMISSION_DISPATCHER"
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:$PERMISSION_DISPATCHER"
+
+    //parceler
+    compile "org.parceler:parceler-api:$PARCELER"
+    annotationProcessor "org.parceler:parceler:$PARCELER"
+
+    /*Calligraphy Dependency for applying custom fonts*/
+    compile "uk.co.chrisjenx:calligraphy:$CALLIGRAPHY_VERSION"
+
+    /*SDP Dependency*/
+    compile "com.intuit.sdp:sdp-android:$SDP_VERSION"
+
+    compile 'com.theartofdev.edmodo:android-image-cropper:2.4.6'
+
+}
